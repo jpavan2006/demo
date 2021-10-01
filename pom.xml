@@ -17,6 +17,16 @@
 		<java.version>11</java.version>
 		<jacoco.version>0.8.2</jacoco.version>
 	</properties>
+	<distributionManagement>
+		<snapshotRepository>
+			<id>libs-snapshots-local</id>
+			<url>https://localhost:8443/repository/libs-snapshot-local/</url>
+		</snapshotRepository>
+		<repository>
+			<id>libs-releases-local</id>
+			<url>https://localhost:8443/repository/libs-releases-local/</url>
+		</repository>
+	</distributionManagement>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
