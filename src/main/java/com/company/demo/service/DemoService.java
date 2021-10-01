@@ -9,6 +9,7 @@ public class DemoService {
 
     public Optional<String> hello(String name){
 
+        System.out.println("name passed"+name);
         StringBuilder result = new StringBuilder();
 
         if (name == null || name.trim().length() == 0) {
@@ -20,7 +21,7 @@ public class DemoService {
             result.append("Hello " + name);
 
         }
-
+        System.out.println("result.toString()"+result.toString());
         return Optional.of(result.toString());
     }
 }
