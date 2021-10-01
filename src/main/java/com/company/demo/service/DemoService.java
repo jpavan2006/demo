@@ -11,7 +11,8 @@ public class DemoService {
 
         System.out.println("name passed"+name);
         StringBuilder result = new StringBuilder();
-
+        result.append("Hello " + name);
+  /*
         if (name == null || name.trim().length() == 0) {
 
             result.append("Please provide a name!");
@@ -22,6 +23,8 @@ public class DemoService {
 
         }
         System.out.println("result.toString()"+result.toString());
+        */
+
         return Optional.of(result.toString());
     }
 }

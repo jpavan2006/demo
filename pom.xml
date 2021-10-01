@@ -50,6 +50,12 @@
 				<groupId>org.jacoco</groupId>
 				<artifactId>jacoco-maven-plugin</artifactId>
 				<version>${jacoco.version}</version>
+				<configuration>
+				<excludes>
+					<exclude>**/com/company/demo/controller/*</exclude>
+					<exclude>**/com/company/demo/DemoApplication.class</exclude>
+				</excludes>
+				</configuration>
 				<executions>
 					<execution>
 						<goals>
@@ -69,6 +75,7 @@
 							<goal>check</goal>
 						</goals>
 						<configuration>
+
 							<rules>
 								<rule>
 									<element>PACKAGE</element>
